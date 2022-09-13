@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/PetsHomeFrag">
+
+    <fragment
+        android:id="@+id/PetsHomeFrag"
+        android:name="com.lloydsbankinggroupcc.ui.PetsHomeFragment"
+        android:label="petsHomeFragment"
+        tools:layout="@layout/fragment_pets_home">
+
+        <action
+            android:id="@+id/action_HomeFragment_to_DetailFragment"
+            app:destination="@id/PetDetailFrag" />
+    </fragment>
+    <fragment
+        android:id="@+id/PetDetailFrag"
+        android:name="com.lloydsbankinggroupcc.ui.PetDetailFragment"
+        android:label="pet_detail_fragment"
+        tools:layout="@layout/fragment_pet_detail">
+        <argument
+            android:name="imageUrl"
+            app:argType="string"
+            app:nullable="true" />
+        <argument
+            android:name="primaryBreed"
+            app:argType="string"
+            app:nullable="true" />
+        <argument
+            android:name="size"
+            app:argType="string"
+            app:nullable="true" />
+        <argument
+            android:name="status"
+            app:argType="string"
+            app:nullable="true" />
+        <action
+            android:id="@+id/action_DetailFragment_to_HomeFragment"
+            app:destination="@id/PetsHomeFrag" />
+    </fragment>
+</navigation>

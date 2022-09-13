@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">LloydsBankingGroupCC</string>
+    <string name="title_activity_home">HomeActivity</string>
+    <!-- Strings used for fragments for navigation -->
+
+    <string name="breed">Primary Breed</string>
+    <string name="size">Size</string>
+    <string name="status">Status</string>
+    <string name="defaultText">No Data Available</string>
+
+    <string name="loadingStatus">Fetching data from server</string>
+    <string name="finishStatus">finished loading</string>
+    <string name="errorStatus">could not load data, please restart the app</string>
+</resources>
